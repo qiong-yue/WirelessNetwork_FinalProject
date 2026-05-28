@@ -1,11 +1,11 @@
 import socket
 import time
 
-ESP32_IP = "192.168.1.121"  # 改成你的 ESP32 IP
+ESP32_IP = "172.20.10.14"  # 改成你的 ESP32 IP
 UDP_PORT = 8888
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.settimeout(1)
+sock.settimeout(5)
 
 for i in range(1, 11):
     msg = f"SEQ:{i}"

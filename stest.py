@@ -1,6 +1,6 @@
 import serial
 
-SERIAL_PORT = "/dev/cu.usbmodem1101"
+SERIAL_PORT = "/dev/cu.usbmodem2101"
 BAUD_RATE = 115200
 
 ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
